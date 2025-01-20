@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/curr_state_out"
+            android:layout_width="162dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="196dp"
+            android:fontFamily="@font/montserrat_bold1"
+            android:hint="з/п"
+
+            android:textColor="@color/main"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/curr_state"
+            android:layout_width="203dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="196dp"
+            android:fontFamily="@font/montserrat_bold1"
+            android:text="@string/curr_state_str"
+
+            android:textColor="@color/main"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/circle_dec"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle_dec_st" />
+
+        <ImageView
+            android:id="@+id/circle_dec_gr"
+            android:layout_width="225dp"
+            android:layout_height="216dp"
+            android:layout_marginEnd="203dp"
+            android:alpha=".20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle_dec_gr_st" />
+
+        <ImageView
+            android:id="@+id/point_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/points" />
+
+
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="309dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/montserrat_bold1"
+            android:text="Управление светодиодным кольцом"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/points_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/circle_dec_end"
+            app:srcCompat="@drawable/points" />
+
+        <ImageView
+            android:id="@+id/circle_dec_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/circle_dec_end" />
+
+        <ImageView
+            android:id="@+id/circle_dec_gr_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:alpha=".20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/circle_dec_gr_end" />
+
+        <ImageView
+            android:id="@+id/conn_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/conn_success" />
+
+
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="92dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="224dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false"
+            android:src="@drawable/toggle_off"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/getdata_btn"
+            android:layout_width="326dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="324dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/get_data" />
+
+        <ImageButton
+            android:id="@+id/signout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="672dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/signout_button" />
+
+        <TextView
+            android:id="@+id/signUp_again"
+            android:layout_width="128dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="760dp"
+            android:fontFamily="@font/montserrat_bold1"
+            android:text="@string/conn_again_str"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="360dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="440dp"
+            android:background="#5D979696"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/state1_btn"
+            android:layout_width="92dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="264dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/state_1" />
+
+        <ImageButton
+            android:id="@+id/state2_btn"
+            android:layout_width="119dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="264dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/state_2" />
+
+        <ImageButton
+            android:id="@+id/state3_btn"
+            android:layout_width="119dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="254dp"
+            android:layout_marginTop="264dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/state_3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartFragment">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/circle_dec"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_dec_st" />
+
+            <ImageView
+                android:id="@+id/circle_dec_gr"
+                android:layout_width="225dp"
+                android:layout_height="216dp"
+                android:layout_marginEnd="203dp"
+                android:alpha=".20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_dec_gr_st" />
+
+            <ImageView
+                android:id="@+id/point_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/points" />
+
+            <ImageView
+                android:id="@+id/sm_home"
+                android:layout_width="177dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="204dp"
+                android:layout_marginTop="268dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/smart_home" />
+
+            <ImageButton
+                android:id="@+id/setup_conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="488dp"
+                android:background="?android:selectableItemBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/start_btn" />
+
+            <TextView
+                android:id="@+id/headtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="212dp"
+                android:fontFamily="@font/montserrat_bold1"
+                android:text="@string/iot_manager"
+                android:textColor="@color/main"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/points_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="72dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/circle_dec_end"
+                app:srcCompat="@drawable/points" />
+
+            <ImageView
+                android:id="@+id/circle_dec_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/circle_dec_end" />
+
+            <ImageView
+                android:id="@+id/circle_dec_gr_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:alpha=".20"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/circle_dec_gr_end" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

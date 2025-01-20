@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IoT Manager</string>
+    <string name="iot_manager">IoT manager</string>
+    <string name="auth_str">Авторизация</string>
+    <string name="user_str">Имя пользователя</string>
+    <string name="psw_str">Пароль</string>
+    <string name="signup_str"><u>Зарегистрировать пользователя с таким именем</u></string>
+    <string name="curr_state_str">Текущее состояние:</string>
+    <string name="conn_again_str"><u>В начало</u></string>
+</resources>

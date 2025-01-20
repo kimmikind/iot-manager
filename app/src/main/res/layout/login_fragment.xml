@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="889dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/signUp_tv"
+            android:layout_width="333dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="608dp"
+            android:fontFamily="@font/montserrat_bold1"
+            android:text="@string/signup_str"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="216dp"
+            android:fontFamily="@font/montserrat_bold1"
+            android:text="@string/auth_str"
+            android:textColor="@color/main"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/circle_dec"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle_dec_st" />
+
+        <ImageView
+            android:id="@+id/circle_dec_gr"
+            android:layout_width="225dp"
+            android:layout_height="216dp"
+            android:layout_marginEnd="203dp"
+            android:alpha=".20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle_dec_gr_st" />
+
+        <ImageView
+            android:id="@+id/point_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/points" />
+
+
+        <ImageView
+            android:id="@+id/points_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/circle_dec_end"
+            app:srcCompat="@drawable/points" />
+
+      " />
+
+        <ImageView
+            android:id="@+id/circle_dec_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/circle_dec_end" />
+
+        <ImageView
+            android:id="@+id/circle_dec_gr_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:alpha=".20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/circle_dec_gr_end" />
+
+        <ImageView
+            android:id="@+id/psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="372dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/psw_input" />
+
+        <EditText
+            android:id="@+id/input_pass"
+            android:layout_width="330dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/psw_str"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/psw" />
+
+        <ImageView
+            android:id="@+id/usr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="288dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user_input" />
+
+        <EditText
+            android:id="@+id/input_user"
+            android:layout_width="330dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/user_str"
+
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/usr" />
+
+        <ImageButton
+            android:id="@+id/conn_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="308dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/auth_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
